@@ -4,43 +4,121 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="text-scale" content="scale">
+  <meta name="description" content="Choisis ta guilde, lance ton premier travail et découvre comment faire grandir CamaCity avec le chat de CamariX.">
   <title>Règles du jeu · CamaCity</title>
-  <link rel="stylesheet" href="camacity-pages.css">
+  <link rel="stylesheet" href="regles-camacity.css">
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Règles du jeu</h1>
-      <p>Récolte, fabrique et échange avec les autres joueurs pour faire grandir la ville.</p>
-    </header>
+  <header class="site-header">
+    <div class="shell">
+      <a class="brand" href="index.html">CamaCity</a>
+      <a class="twitch-link" href="https://www.twitch.tv/camarix">Jouer sur Twitch <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
 
-    <section>
-      <h2>Commencer</h2>
-      <p>Quand la journée de jeu est ouverte, ouvre CamaCity dans Twitch. Partage ton identité si Twitch le demande et choisis ta guilde. Les Forestiers récoltent du bois. Les Menuisiers fabriquent notamment des planches et des charrettes. Tape <code>!eco moi</code> dans le chat pour consulter ton personnage ou <code>!eco aide</code> pour voir les commandes.</p>
+  <main class="shell">
+    <section class="welcome">
+      <div class="welcome-copy">
+        <p class="eyebrow">Le guide du village</p>
+        <h1>Bienvenue à CamaCity&nbsp;!</h1>
+        <p>Des arbres à couper, des charrettes à fabriquer et une ville à faire grandir. Choisis ton métier et viens jouer avec le chat de CamariX.</p>
+        <a class="primary-link" href="#premiere-partie">Commencer ma première partie <span aria-hidden="true">↓</span></a>
+      </div>
+      <img src="village-camacity.webp" alt="" width="960" height="640" fetchpriority="high">
     </section>
 
-    <section>
-      <h2>Travailler</h2>
-      <p>Choisis une action dans l’onglet Guilde. Le panneau indique sa durée, son coût en énergie et les ressources requises. Le salaire est calculé au taux horaire de l’employeur. Pour récolter, ta guilde doit avoir une charrette disponible. Elle transporte ce que tu récoltes jusqu’au dépôt de la guilde. Tu peux interrompre la récolte et rentrer avec le chargement déjà ramassé.</p>
-      <p>Une fabrication ou un module de chantier se termine entièrement. Les matières, l’énergie et le salaire nécessaires sont réservés au lancement.</p>
+    <nav class="contents" aria-label="Dans ce guide">
+      <a href="#guildes">Les guildes</a>
+      <a href="#marche">Le marché</a>
+      <a href="#mairie">Les chantiers</a>
+      <a href="#questions">Les questions fréquentes</a>
+    </nav>
+
+    <section class="chapter" id="premiere-partie">
+      <h2>Ta première journée</h2>
+      <ol class="steps">
+        <li>
+          <h3>Ouvre CamaCity</h3>
+          <p>Quand la journée de jeu est ouverte sur la chaîne de CamariX, ouvre l’extension. Si Twitch te le demande, autorise le partage de ton identité pour retrouver le même personnage dans le jeu et dans le chat.</p>
+        </li>
+        <li>
+          <h3>Choisis ta guilde</h3>
+          <p>Dans <strong>Guilde</strong>, rejoins les Forestiers pour récolter du bois ou les Menuisiers pour le transformer.</p>
+        </li>
+        <li>
+          <h3>Lance ton premier travail</h3>
+          <p>Regarde la durée, l’énergie, les matériaux et la paie affichés, puis clique sur <strong>Lancer</strong>. Tu peux suivre ton personnage sur la carte du live.</p>
+        </li>
+      </ol>
+      <p class="chat-note">Depuis le chat, <code>!eco moi</code> affiche ton personnage et <code>!eco aide</code> te donne les commandes.</p>
     </section>
 
-    <section>
-      <h2>Échanger et livrer</h2>
-      <p>L’onglet Marché liste les offres de vente et les demandes d’achat. Tu peux traiter une quantité partielle. Le stock mis en vente ou engagé dans une livraison est réservé. Pour une transaction vendue par une guilde, ses membres assurent la livraison. Une commande trop grande pour une charrette se livre en plusieurs trajets.</p>
+    <section class="chapter" id="guildes">
+      <h2>Forêt ou atelier&nbsp;?</h2>
+      <div class="cards">
+        <article class="guild forest">
+          <h3><span aria-hidden="true">🌲</span> Forestiers</h3>
+          <p>Prends une charrette libre et pars en forêt. Tu peux rentrer avec ce que tu as déjà récolté ou attendre que la charrette se remplisse. Au retour, le bois rejoint le dépôt de ta guilde.</p>
+        </article>
+        <article class="guild workshop">
+          <h3><span aria-hidden="true">🪚</span> Menuisiers</h3>
+          <p>À l’atelier, transforme le bois en planches. Avec ces planches, tu peux fabriquer des meubles ou une charrette qui permettra à ta guilde de faire plus de tournées.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Guilde et mairie</h2>
-      <p>Tu rejoins ta guilde comme novice. Après trois jours de jeu dans la guilde, tu deviens compagnon. Quitter ta guilde déverrouille les autres guildes à la journée suivante. Si tu rejoins de nouveau celle que tu as quittée, tu repars comme novice.</p>
-      <p>Les membres élisent un chef, qui peut désigner un adjoint. La mairie publie des demandes de matériaux pour ses chantiers. Quand les matériaux sont disponibles, les joueurs peuvent fabriquer des modules de construction depuis l’onglet Mairie. Les chantiers font progresser la ville et ouvrent de nouveaux lieux.</p>
-    </section>
+    <div class="cards village-stops">
+      <section class="chapter" id="marche">
+        <h2>Fais vivre le marché</h2>
+        <p>Ouvre <strong>Marché</strong> pour voir ce que les habitants, les guildes et la mairie proposent ou recherchent. Choisis la quantité qui t’intéresse. Le marché affiche aussi la commande à utiliser dans le chat.</p>
+        <p>Quand une transaction est validée, les membres de la guilde qui vend peuvent choisir <strong>Faire une livraison</strong> dans <strong>Guilde</strong>. Le jeu choisit le prochain chargement et sa destination.</p>
+        <aside class="example" aria-label="Exemple de livraison">
+          <p><strong>80 unités à livrer</strong> avec une charrette qui en porte 36&nbsp;? La commande peut se faire en trois trajets.</p>
+          <ol class="loads" aria-label="Chargement par trajet">
+            <li>36</li>
+            <li>36</li>
+            <li>8</li>
+          </ol>
+        </aside>
+      </section>
+      <section class="chapter" id="mairie">
+        <h2>Bâtis la suite du village</h2>
+        <p>La mairie achète les matériaux dont elle a besoin pour ses chantiers. Une fois les matériaux disponibles, ouvre <strong>Mairie</strong> et construis un module.</p>
+        <p>Chaque module terminé te rapporte un salaire et fait avancer le chantier. De live en live, les habitants réunissent assez de bois, de planches et de travail pour ouvrir de nouveaux lieux.</p>
+        <p><strong>De l’arbre à la carrière.</strong> Les Forestiers coupent le bois, les Menuisiers le débitent en planches et les habitants s’en servent pour bâtir la ville ensemble.</p>
+      </section>
+    </div>
 
-    <section>
-      <h2>Jouer ensemble</h2>
-      <p>Respecte les autres joueurs, les règles du chat et les décisions de modération. Si tu repères un bug ou un échange anormal, signale-le à CamariX en message privé sur Twitch.</p>
+    <section class="chapter questions" id="questions" aria-labelledby="questions-title">
+      <h2 id="questions-title">Les questions qu’on se pose au village</h2>
+      <details>
+        <summary>Puis-je arrêter une action en cours&nbsp;?</summary>
+        <p>Tu peux interrompre une récolte et laisser à ton personnage le temps de revenir au dépôt. Une fabrication ou un module de chantier va jusqu’au bout. Le jeu vérifie et réserve au départ l’énergie, les ressources et la paie nécessaires.</p>
+      </details>
+      <details>
+        <summary>Comment je suis payé et quand je dépense de l’énergie&nbsp;?</summary>
+        <p>Tu es payé au temps passé, au tarif horaire de ta guilde ou de la mairie. Les déplacements ne coûtent pas d’énergie. Le panneau affiche le coût des actions de travail avant que tu les lances.</p>
+      </details>
+      <details>
+        <summary>Puis-je utiliser le bois que ma guilde a mis en vente&nbsp;?</summary>
+        <p>Les marchandises mises en vente sont réservées. Si ta guilde retire une offre, la quantité encore disponible redevient utilisable à l’atelier. Les quantités déjà achetées restent réservées pour la livraison.</p>
+      </details>
+      <details>
+        <summary>Comment changer de guilde ou voter pour un chef&nbsp;?</summary>
+        <p>Tu commences comme novice. Après trois jours de jeu dans ta guilde, tu deviens compagnon et tu peux la quitter. Les autres guildes sont accessibles dès le jour de jeu suivant. Si tu rejoins ton ancienne guilde, tu repars comme novice.</p>
+        <p>Les membres qui remplissent les conditions du scrutin élisent leur chef. Le vote se fait dans le chat avec <code>!vote</code> suivi du numéro du candidat. Le chef peut nommer un adjoint.</p>
+      </details>
+      <details>
+        <summary>Que faire si je tombe sur un bug ou un abus&nbsp;?</summary>
+        <p>Préviens CamariX en message privé sur Twitch. En jeu comme dans le chat, respecte les autres joueurs et les décisions de modération.</p>
+      </details>
     </section>
-    <footer><a href="./index.html">Informations CamaCity</a> · <a href="conditions-camacity.html">Conditions d’utilisation</a></footer>
   </main>
+
+  <footer class="site-footer shell">
+    <a href="index.html">Accueil CamaCity</a>
+    <a href="conditions-camacity.html">Conditions d’utilisation</a>
+    <a href="confidentialite-camacity.html">Confidentialité</a>
+  </footer>
 </body>
 </html>
