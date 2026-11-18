@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rejoins une guilde, travaille, livre et aide à construire le village CamaCity sur Twitch.">
+  <title>Comment jouer à CamaCity</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./aide.css">
+  <script type="module" src="./aide.js"></script>
+</head>
+<body>
+  <main class="tutorial">
+    <header class="heading">
+      <h1>Comment jouer à CamaCity</h1>
+      <a class="channel" href="https://www.twitch.tv/camarix">Ouvrir la chaîne Twitch ↗</a>
+    </header>
+    <div class="scene">
+      <figure class="village">
+        <canvas width="840" height="420" aria-label="Carte animée du village CamaCity"></canvas>
+        <figcaption id="place">Mairie</figcaption>
+      </figure>
+      <section class="extension" aria-labelledby="panel-title">
+        <header><h2 id="panel-title">CamaCity</h2><span>Panneau de démonstration</span></header>
+        <div id="panel"></div>
+      </section>
+    </div>
+
+    <audio id="voice" preload="none" hidden></audio>
+    <div class="controls">
+      <button id="play" type="button">Lancer la démo</button>
+      <button id="previous" type="button" aria-label="Scène précédente">←</button>
+      <button id="next" type="button" aria-label="Scène suivante">→</button>
+      <input id="position" type="range" min="0" step="0.1" value="0" aria-label="Position dans la démonstration">
+      <output id="clock" for="position">0:00</output>
+    </div>
+    <nav id="chapters" class="chapters" aria-label="Étapes de la démonstration"></nav>
+    <section class="explanation" aria-labelledby="chapter-title">
+      <h2 id="chapter-title">Rejoindre</h2>
+      <p id="caption">Ouvre le panneau CamaCity sur la chaîne Twitch et choisis ton métier.</p>
+    </section>
+    <details class="transcript">
+      <summary>Lire toutes les étapes</summary>
+      <ol id="transcript"></ol>
+    </details>
+    <noscript>
+      <ol>
+        <li>Ouvre CamaCity sur la chaîne, partage ton identité Twitch si nécessaire et rejoins une guilde depuis son bâtiment.</li>
+        <li>Les Forestiers coupent du bois en forêt. Les Menuisiers fabriquent des planches à l’atelier.</li>
+        <li>Réponds à une demande au marché, puis pars du dépôt pour livrer.</li>
+        <li>Apporte les matériaux au chantier. Les modules terminés permettent d’ouvrir un nouveau métier après l’inauguration.</li>
+      </ol>
+    </noscript>
+  </main>
+</body>
+</html>

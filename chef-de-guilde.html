@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CamaCity · Chef de guilde</title>
+  <link rel="stylesheet" href="camacity-pages.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Chef de guilde</h1>
+      <p>Dans le panneau Twitch, choisis le dépôt de ta guilde dans <strong>Aller</strong>. Une fois sur place, ouvre <strong>Interagir</strong>, puis <strong>Réglages de la guilde</strong>.</p>
+    </header>
+    <section aria-labelledby="equipe">
+      <h2 id="equipe">Répartir les responsabilités</h2>
+      <p>Le chef fixe le <strong>Taux horaire</strong> et le <strong>Prix de vente</strong> des matériaux de la guilde. Dans <strong>Adjoint</strong>, il peut désigner un compagnon de sa guilde.</p>
+      <p>Le chef et son adjoint peuvent modifier les <strong>Objectifs de stock</strong> et choisir qui valide les échanges au marché. Dans <strong>Validation au marché</strong>, choisis <strong>Tous les membres</strong> ou <strong>Chef et adjoint</strong>.</p>
+    </section>
+    <section aria-labelledby="stock">
+      <h2 id="stock">Garder une réserve et vendre le surplus</h2>
+      <p>Dans <strong>Objectifs de stock</strong>, choisis un article. Le <strong>Stock interne à conserver</strong> sert de réserve. Pour un matériau produit par ta guilde, la <strong>Quantité à proposer à la vente</strong> fixe le maximum mis en vente automatiquement sur le surplus disponible. Mets cette quantité à 0 pour gérer les offres manuellement au marché.</p>
+      <p>Le <strong>Seuil de déclenchement d’achat</strong> lance une demande quand le stock disponible et les arrivages prévus passent sous ce seuil, si la caisse le permet. Mets le seuil à 0 pour désactiver l’achat automatique.</p>
+      <p>Par exemple, chez les Forestiers, <code>!eco guilde stock bois 0 20 12</code> conserve une réserve de 20 bois et propose jusqu’à 12 bois du surplus à la vente, avec les achats automatiques désactivés.</p>
+    </section>
+    <section aria-labelledby="livraison">
+      <h2 id="livraison">Suivre les livraisons et la boutique</h2>
+      <p>Une vente de matériaux validée depuis le dépôt crée un lot à livrer. Retrouve les <strong>Lots de livraison</strong> au dépôt. Les membres peuvent utiliser la charrette de leur guilde. Les coursiers utilisent leur charrette personnelle et peuvent charger les livraisons dans n’importe quel dépôt.</p>
+      <p>Les outils fabriqués sont proposés automatiquement à la boutique, avec un prix calculé par le jeu. L’acheteur repart avec son achat s’il a de la place.</p>
+    </section>
+    <footer><a href="./index.html">Informations CamaCity</a> · <a href="https://camarix.github.io/camacity-pages/aide/">Tutoriel animé</a></footer>
+  </main>
+</body>
+</html>
