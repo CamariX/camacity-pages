@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "buildings": {
+    "workshop": {
+      "label": "Menuiserie",
+      "width": 350,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.5,
+        0.32
+      ],
+      "variants": {
+        "interior": "menuiserie-v1.png"
+      }
+    },
+    "hall": {
+      "label": "Salle des fêtes",
+      "width": 740,
+      "source": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "sign": [
+        0.5,
+        0.335
+      ],
+      "variants": {
+        "interior": "salle-fetes-interieur-v1.png",
+        "exterior": "salle-fetes-exterieur-v1.png"
+      }
+    },
+    "townHall": {
+      "label": "Mairie",
+      "width": 260,
+      "source": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "sign": [
+        0.5,
+        0.605
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "mairie-v1.png"
+      },
+      "preview": {
+        "site": "village",
+        "art": "townHall",
+        "pose": "idle",
+        "future": false,
+        "note": "La mairie conserve sa façade et son horloge, avec une enseigne dessinée par le jeu."
+      }
+    },
+    "depot": {
+      "label": "Forestiers",
+      "width": 260,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.5,
+        0.357
+      ],
+      "baseline": 0.97,
+      "variants": {
+        "interior": "depot-forestiers-v1.png"
+      },
+      "preview": {
+        "site": "siege-forestier",
+        "art": "depot",
+        "pose": "idle",
+        "future": false,
+        "note": "Les bûches et les outils restent au fond du dépôt ; le premier plan accueille les forestiers."
+      }
+    },
+    "quarry": {
+      "label": "Carrière",
+      "width": 370,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.5,
+        0.735
+      ],
+      "baseline": 0.88,
+      "variants": {
+        "interior": "carriere-v1.png"
+      },
+      "preview": {
+        "site": "carriere",
+        "art": "quarry",
+        "pose": "pickaxe",
+        "future": false,
+        "note": "Front de taille, blocs de pierre et grue. Les mineurs et les livraisons restent animés séparément."
+      }
+    },
+    "forest": {
+      "label": "Forêt",
+      "width": 700,
+      "source": [
+        0,
+        0,
+        2172,
+        724
+      ],
+      "sign": null,
+      "baseline": 0.96,
+      "variants": {
+        "interior": "foret-v1.png"
+      },
+      "preview": {
+        "site": "foret",
+        "art": "forest",
+        "pose": "axe",
+        "future": false,
+        "note": "Un bosquet HD détouré, avec un passage central pour les bûcherons et les charrettes."
+      }
+    },
+    "market": {
+      "label": "Marché des matériaux",
+      "width": 160,
+      "source": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "sign": [
+        0.5,
+        0.31
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "marche-neutre-v1.png"
+      },
+      "preview": {
+        "site": "marche",
+        "art": "market",
+        "pose": "idle",
+        "future": false,
+        "note": "Intérieur neutre et stocks à l’extérieur, uniquement pour les matériaux débloqués avec une offre de vente disponible."
+      },
+      "stock": {
+        "file": "stocks-materiaux-v1.png",
+        "sources": [
+          [
+            63,
+            125,
+            390,
+            301
+          ],
+          [
+            535,
+            248,
+            465,
+            177
+          ],
+          [
+            1075,
+            135,
+            408,
+            290
+          ],
+          [
+            45,
+            689,
+            438,
+            204
+          ],
+          [
+            561,
+            662,
+            417,
+            226
+          ],
+          [
+            1075,
+            699,
+            407,
+            185
+          ]
+        ]
+      }
+    },
+    "artShop": {
+      "label": "Boutique d’art",
+      "width": 76,
+      "source": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "sign": [
+        0.5,
+        0.35
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "boutique-art-v1.png"
+      },
+      "preview": {
+        "site": "galerie",
+        "art": "shop",
+        "pose": "idle",
+        "future": false,
+        "note": "Un kiosque consacré à l’art. Les cadres du décor sont vides ; les œuvres des joueurs restent des données du jeu."
+      }
+    },
+    "generalShop": {
+      "label": "Boutique générale",
+      "width": 76,
+      "source": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "sign": [
+        0.5,
+        0.33
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "boutique-generale-v1.png"
+      },
+      "preview": {
+        "site": "boutique",
+        "art": "shop",
+        "pose": "idle",
+        "future": false,
+        "note": "Un kiosque de fournitures et d’équipement, distinct du marché des matériaux."
+      }
+    },
+    "farm": {
+      "label": "Ferme",
+      "width": 330,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.28,
+        0.43
+      ],
+      "baseline": 0.88,
+      "variants": {
+        "interior": "ferme-v1.png"
+      },
+      "preview": {
+        "site": "ferme",
+        "art": "farm",
+        "pose": "farm",
+        "future": false,
+        "note": "Une grange et des cultures, avec le fermier animé au premier plan."
+      }
+    },
+    "kitchen": {
+      "label": "Restaurant",
+      "width": 280,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.5,
+        0.34
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "restaurant-v1.png"
+      },
+      "preview": {
+        "site": "cuisine",
+        "art": "kitchen",
+        "pose": "cook",
+        "future": false,
+        "note": "Restaurant avec comptoir à emporter et table sur place. Cette illustration ne change pas les recettes actuelles."
+      }
+    },
+    "forge": {
+      "label": "Forge",
+      "width": 280,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.5,
+        0.34
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "forge-v2.png"
+      },
+      "preview": {
+        "site": "forge",
+        "art": "forge",
+        "pose": "forge",
+        "future": false,
+        "note": "Four, enclume et outils de forge ; le forgeron reste animé par le moteur."
+      }
+    },
+    "clinic": {
+      "label": "Clinique",
+      "width": 280,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.5,
+        0.35
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "clinique-v1.png"
+      },
+      "preview": {
+        "site": "clinique",
+        "art": "clinic",
+        "pose": "idle",
+        "future": false,
+        "note": "Clinique municipale au niveau 9 : séjours choisis par le joueur et fournitures livrées par les guildes."
+      }
+    },
+    "glassworks": {
+      "label": "Verrerie",
+      "width": 300,
+      "source": [
+        0,
+        0,
+        1774,
+        887
+      ],
+      "sign": [
+        0.5,
+        0.35
+      ],
+      "baseline": 1,
+      "variants": {
+        "interior": "verrerie-v1.png"
+      },
+      "preview": {
+        "site": "verrerie",
+        "art": "glassworks",
+        "pose": "idle",
+        "future": false,
+        "note": "Verrerie au niveau 10 : verre, contenants, aménagements et art du verre."
+      }
+    }
+  }
+}

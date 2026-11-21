@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "parts": {
+    "body": {
+      "file": "cart-body-v1.webp",
+      "source": [
+        63,
+        212,
+        2061,
+        297
+      ],
+      "pixels": [
+        2172,
+        724
+      ]
+    },
+    "wheel": {
+      "file": "cart-wheel-v1.webp",
+      "source": [
+        61,
+        69,
+        1123,
+        1132
+      ],
+      "pixels": [
+        1254,
+        1254
+      ]
+    },
+    "crates": {
+      "file": "cart-crates-v1.webp",
+      "source": [
+        231,
+        231,
+        1073,
+        603
+      ],
+      "pixels": [
+        1536,
+        1024
+      ]
+    }
+  },
+  "materials": {
+    "file": "assets/buildings/stocks-materiaux-v1.png",
+    "sources": {
+      "logs": [
+        63,
+        125,
+        390,
+        301
+      ],
+      "bois": [
+        63,
+        125,
+        390,
+        301
+      ],
+      "planches": [
+        535,
+        248,
+        465,
+        177
+      ],
+      "pierre": [
+        1075,
+        135,
+        408,
+        290
+      ],
+      "fibres": [
+        45,
+        689,
+        438,
+        204
+      ],
+      "minerai": [
+        561,
+        662,
+        417,
+        226
+      ],
+      "lingot": [
+        1075,
+        699,
+        407,
+        185
+      ]
+    }
+  }
+}

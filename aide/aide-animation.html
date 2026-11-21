@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark">
+<title>Les bases en animation · CamaCity</title><link rel="stylesheet" href="aide.css"><script type="module" src="aide-animation.js"></script></head>
+<body><main><nav aria-label="Aide"><a href="aide.html">Toutes les pages d’aide</a><a href="aide-jour-prestige.html">Jour du Prestige</a></nav>
+<header><p class="eyebrow">CamaCity · Premiers pas</p><h1>Les bases en animation</h1><p class="intro">Rejoins une guilde, travaille avec les autres et prends le temps de créer chez toi.</p></header>
+<p class="demo-notice">Démonstration illustrative, avec des durées accélérées. Elle ne modifie aucune partie.</p>
+<figure class="demo-stage"><canvas id="demo-canvas" width="1200" height="540" role="img" aria-label="Illustration animée de l’étape expliquée en dessous" aria-describedby="demo-caption">Lis les étapes dans la transcription ci-dessous.</canvas>
+<figcaption id="demo-caption" class="demo-caption" aria-live="polite"><h2 id="step-title">Rejoindre</h2><p id="step-text">Partage ton identité Twitch et choisis une guilde disponible pendant une session ouverte.</p></figcaption></figure>
+<div class="demo-controls"><button id="previous" type="button">← Précédent</button><button id="play" type="button">Lire</button><button id="next" type="button">Suivant →</button><output id="time" for="position">0:00 / 1:40</output><label for="position">Position dans la démonstration</label><input id="position" type="range" min="0" max="100" value="0" step="0.1"></div>
+<div class="chapters" id="chapters" role="group" aria-label="Choisir une étape"></div>
+<aside class="demo-panel" aria-label="Exemple du panneau de jeu"><div class="sample-tabs"><span id="sample-tab">Interagir</span><span>·</span><span id="sample-place">Bienvenue</span></div><div class="demo-choice" id="sample-action">Rejoindre les Forestiers</div><p id="sample-condition">Session ouverte · une guilde disponible</p><a id="step-help" href="aide-debuter.html">Comprendre les boutons de cette étape →</a></aside>
+<p id="demo-status" class="demo-notice" role="status">Chargement des décors et des personnages…</p>
+<details><summary>Lire toutes les étapes sans animation</summary><ol id="transcript" class="transcript">
+<li><strong>Rejoindre.</strong> Partage ton identité Twitch et choisis une guilde disponible pendant une session ouverte.</li>
+<li><strong>Travailler.</strong> Dans Aller, rends-toi à ta guilde. Depuis Interagir, lance une activité disponible ; ses conditions sont affichées.</li>
+<li><strong>Échanger et livrer.</strong> Valide les offres au marché, puis livre les lots prêts depuis le dépôt. Le client récupère les achats chez lui.</li>
+<li><strong>Construire ensemble.</strong> Fournis les matériaux et construis les modules du chantier communal pour faire avancer le village.</li>
+<li><strong>Rentrer et créer.</strong> Chez toi, récupère ton énergie, aménage ton logement et pratique un art débloqué avec ses fournitures.</li>
+</ol></details><noscript><p>La démonstration animée nécessite JavaScript. Les pages d’aide et la transcription restent disponibles.</p></noscript>
+<footer><a href="aide.html">Parcourir les pages d’aide</a></footer></main></body></html>
